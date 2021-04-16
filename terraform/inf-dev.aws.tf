@@ -137,7 +137,7 @@ resource "aws_security_group" "terraform_mongo_sg" {
 }
 
 resource "aws_instance" "nginx_instance" {
-  ami           = "ami-0d49da4ed3416cf5a"
+  ami           = "ami-05481a4fad6dd57b1"
   instance_type = "t2.nano"
   key_name      = "us-west-2-key"
 
@@ -150,7 +150,7 @@ resource "aws_instance" "nginx_instance" {
 }
 
 resource "aws_instance" "app_instance" {
-  ami           = "ami-0c2c88bc82e6ff47e"
+  ami           = "ami-01a811b8636a7b54e"
   instance_type = "t2.nano"
   key_name      = "us-west-2-key"
 
@@ -165,7 +165,7 @@ resource "aws_instance" "app_instance" {
 }
 
 resource "aws_instance" "mongo_instance" {
-  ami           = "ami-0bbe2ae95b5d1bdc3"
+  ami           = "ami-03477437025a39b0c"
   instance_type = "t2.nano"
   key_name      = "us-west-2-key"
 
